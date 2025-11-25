@@ -1,1 +1,124 @@
-<h1>Hello World Wide Web!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .main-container {
+            width: 1440px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+        }
+        
+        .content {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+        }
+        
+        .hero {
+            width: 1200px;
+            height: 400px;
+            background-color: #3498db;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+        }
+        
+        .grid-4x1 {
+            width: 1200px;
+            margin-bottom: 40px;
+        }
+        
+        .grid-4x1-row {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .grid-4x1-item {
+            width: 285px;
+            height: 200px;
+            background-color: #e74c3c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .grid-2x1 {
+            width: 1200px;
+            margin-bottom: 40px;
+        }
+        
+        .grid-2x1-row {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .grid-2x1-item {
+            width: 590px;
+            height: 250px;
+            background-color: #2ecc71;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .footer {
+            width: 1200px;
+            height: 150px;
+            background-color: #34495e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="content">
+            <div class="hero">
+                Hero Section
+            </div>
+            
+            <div class="grid-4x1">
+                <div class="grid-4x1-row">
+                    <div class="grid-4x1-item">Column 1</div>
+                    <div class="grid-4x1-item">Column 2</div>
+                    <div class="grid-4x1-item">Column 3</div>
+                    <div class="grid-4x1-item">Column 4</div>
+                </div>
+            </div>
+            
+            <div class="grid-2x1">
+                <div class="grid-2x1-row">
+                    <div class="grid-2x1-item">Column 1</div>
+                    <div class="grid-2x1-item">Column 2</div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                Footer Section
+            </div>
+        </div>
+    </div>
+</body>
+</html>
